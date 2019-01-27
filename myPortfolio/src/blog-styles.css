@@ -1,11 +1,20 @@
-h1 {
-    color:blue;
-    width: 60%;
-    margin: 5% auto;
-} 
+
+header {
+    height: 70px;
+    background-color: darkgray;
+
+}
+
+
+header h1 {
+    color: black;
+    margin-left: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 
 main {
-    width: 60%;
+    width: 80%;
     margin: 5% auto;
     background: whitesmoke;
 }
@@ -15,6 +24,7 @@ article{
     border: solid grey 2px;
     margin: 1% auto;
     width: 95%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
