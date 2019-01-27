@@ -8,4 +8,12 @@ header {
 
 div {
     border-color: black 5px;
+} 
+
+main {
+    border: solid black 2px;
+}
+
+h3 {
+    font-style:italic;
 }
