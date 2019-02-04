@@ -1,0 +1,142 @@
+header {
+    background-color: lightblue;
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+    background-color: lavender;
+    min-height: 800px;
+
+  }
+  nav {
+    grid-area: nav;
+    background-color: lightsalmon;
+  }
+  aside {
+    grid-area: aside;
+    background-color: lightgreen;
+  }
+  .banner {
+    grid-area: banner;
+    background-color: whitesmoke;
+  }
+  footer {
+    grid-area: footer;
+    background-color: khaki;
+  }
+
+  .container {
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+      "header header  header"
+      "nav    main    aside"
+      "nav    main    banner"
+      "footer footer  footer"
+   }
+   nav ul {
+     flex-direction: column;
+   }
+
+#calc {
+    width:240px;
+    height:280px;
+    border: black solid 2px;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "display display display display"
+        "cdisplay cdisplay cdisplay cdisplay"
+        "divide multiply clear clear"
+        "seven eight nine minus"
+        "four five six plus"
+        "one two three equal"
+        "zero zero dot equal";
+    }
+
+button:hover {
+    background-color:lightgray;
+}
+
+#display{
+    grid-area:display;
+  }
+#cdisplay{
+    grid-area:cdisplay;
+  }
+#clear
+  {
+    grid-area:clear;
+  }
+#divide
+  {
+    grid-area:divide;
+  }
+#multiply
+  {
+    grid-area:multiply;
+  }
+#seven
+  {
+    grid-area:seven;
+  }
+#eight
+  {
+    grid-area:eight;
+  }
+#nine
+  {
+    grid-area:nine;
+  }
+#minus
+    {
+    grid-area:minus;
+  }
+#plus
+    {
+    grid-area:plus;
+}
+
+#dot {
+    grid-area:dot;
+}
+#zero {
+    grid-area:zero;
+}
+
+/* Responsive screen for mobile/tab devices */
+
+@media only screen and (max-width : 860px){
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav    main"
+        "aside banner"
+        "footer footer";
+    }
+
+    nav ul {
+        flex-direction: row;
+      }
+
+       #calc {
+        width:120px;
+        height:140px;
+    }
+    main {
+        min-height: 0px;
+        max-height: 300px;
+    
+      }
+    nav {
+        min-height: 0;
+        max-height: 300px;
+    }
+
+}
